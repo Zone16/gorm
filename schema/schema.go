@@ -150,7 +150,8 @@ func ParseWithSpecialTableName(dest interface{}, cacheStore *sync.Map, namer Nam
 	modelValue := reflect.New(modelType)
 	tableName := namer.TableName(modelType.Name())
 	if tabler, ok := modelValue.Interface().(Tabler); ok {
-		tableName = tabler.TableName()
+		//tableName = tabler.TableName()
+		tableName = namer.TableName(tabler.TableName())
 	}
 	if tabler, ok := modelValue.Interface().(TablerWithNamer); ok {
 		tableName = tabler.TableName(namer)
