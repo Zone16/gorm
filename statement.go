@@ -12,10 +12,10 @@ import (
 	"strings"
 	"sync"
 
-	"gorm.io/gorm/clause"
-	"gorm.io/gorm/logger"
-	"gorm.io/gorm/schema"
-	"gorm.io/gorm/utils"
+	"github.com/Zone16/gorm/clause"
+	"github.com/Zone16/gorm/logger"
+	"github.com/Zone16/gorm/schema"
+	"github.com/Zone16/gorm/utils"
 )
 
 // Statement statement

@@ -5,10 +5,10 @@ import (
 	"reflect"
 	"strings"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
-	"gorm.io/gorm/schema"
-	"gorm.io/gorm/utils"
+	"github.com/Zone16/gorm"
+	"github.com/Zone16/gorm/clause"
+	"github.com/Zone16/gorm/schema"
+	"github.com/Zone16/gorm/utils"
 )
 
 // BeforeCreate before create hooks
